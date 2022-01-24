@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Blog.DTOs
 {
-    internal class AutoMapperConfiguration
+    public class AutoMapperConfiguration
     {
+
+
     }
 }
