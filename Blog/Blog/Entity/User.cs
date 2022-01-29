@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Blog
+namespace Blog.Entity
 {
-    public  class Usuario
+    public class User
     {
         private int userId;
         private string name;
@@ -17,21 +17,21 @@ namespace Blog
         private ICollection<Posts> posts;
         private ICollection<Comments> comments;
 
-        public Usuario(string name, string password, string email)
+        public User(string name, string password, string email)
         {
             this.name = name;
             this.password = password;
             this.email = email;
         }
         [Key]
-        public int Id { get => userId; set => userId = value; }
+        public int Id { get => userId; set => userId = value;}
         [MaxLength(40)]
-        public string Name { get => name; set => name = value; }
+        public string Name { get => name; set => name = value;}
         [MaxLength(9)]
-        public string Password { get => password; set => password = value; }
+        public string Password { get => password; set => password = value;}
         [MaxLength(40)]
-        public string Email { get => email; set => email = value; }
-        public ICollection<Posts> Posts { get => posts; set => posts = value; }
-        public ICollection<Comments> Comments { get => comments; set => comments = value; }
+        public string Email { get => email; set => email = value;}
+        public ICollection<Posts> Posts { get => posts; set => posts = value;}
+        public ICollection<Comments> Comments { get => comments; set => comments = value;}
     }
 }

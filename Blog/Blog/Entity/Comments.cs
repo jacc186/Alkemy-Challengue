@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Blog
+namespace Blog.Entity
 {
     public class Comments
     {
@@ -14,7 +14,7 @@ namespace Blog
         private string comment;
         private int userId;
 
-        public Comments (DateTime date, string comment, int userId)
+        public Comments(DateTime date, string comment, int userId)
         {
             this.date = date;
             this.comment = comment;
