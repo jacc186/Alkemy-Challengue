@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Blog.DTOs
 {
-    internal class UsuarioDTO
+    internal class UsuarioDTO : Serializable
     { 
             private int userId;
             private string name;

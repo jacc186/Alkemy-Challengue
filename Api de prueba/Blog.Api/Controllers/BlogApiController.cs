@@ -22,9 +22,10 @@ namespace Blog.Api.Controllers
 
         // GET: api/[controller]
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TEntity>>> Get()
+        public virtual async Task<ActionResult<IEnumerable<TEntity>>> Get()
         {
-            return await repository.GetAll();
+            var entity = await repository.GetAll();
+            return Ok(entity);
         }
 
         // GET: api/[controller]/5

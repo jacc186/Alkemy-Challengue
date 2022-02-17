@@ -10,7 +10,6 @@ namespace Blog.Api.Controllers
     {
         public UsersController(EFCoreUserRepository repository) : base(repository)
         {
-
         }
     }
 }

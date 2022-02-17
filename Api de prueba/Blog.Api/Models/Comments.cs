@@ -7,14 +7,7 @@ namespace Blog.Api.Models
     {
         private DateTime date;
         private string comment;
-        private int userId;
-
-        public Comments(DateTime date, string comment, int userId)
-        {
-            this.date = date;
-            this.comment = comment;
-            this.userId = userId;
-        }
+        private User user;
         public int Id { get; set; }
 
         [DataType(DataType.Date)]
@@ -23,6 +16,6 @@ namespace Blog.Api.Models
         [MaxLength(200)]
         public string Comment { get => comment; set => comment = value; }
 
-        public int UserId { get => userId; set => userId = value; }
+        public int UserId { get => user.Id; set => user.Id = value; }
     }
 }

@@ -15,5 +15,8 @@
     <WebStackScaffolding_LayoutPageFile />
     <WebStackScaffolding_DbContextTypeFullName>Blog.Api.Data.BlogApiContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
+    <RazorPage_SelectedScaffolderID>ModelBasedCrudRazorPageScaffolder</RazorPage_SelectedScaffolderID>
+    <RazorPage_SelectedScaffolderCategoryPath>root/Common/RazorPage</RazorPage_SelectedScaffolderCategoryPath>
+    <WebStackScaffolding_ViewDialogWidth>650</WebStackScaffolding_ViewDialogWidth>
   </PropertyGroup>
 </Project>
